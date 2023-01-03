@@ -1,0 +1,21 @@
+import { StatusBar } from 'expo-status-bar';
+import * as React from 'react';
+import { StyleSheet, Text, View, Dimensions, Platform, Button } from 'react-native';
+
+export default function ProfileScreen({navigation}:any) {
+    return (
+        <View style={styles.container}>
+            <StatusBar backgroundColor="#630BDD" style="light" hidden={false} translucent={false}></StatusBar>
+            <Text>Profile Screen</Text>
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
